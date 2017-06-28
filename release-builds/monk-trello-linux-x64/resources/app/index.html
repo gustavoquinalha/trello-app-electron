@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Monk Trello</title>
+    <link rel="icon" type="image/x-icon" href="img/ico/logo.png.ico" />
+    <link rel="icon" type="image/png" href="img/ico/64x64.png" />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0
+    }
+    body,html {
+      height: 100%
+    }
+
+    webview {
+      width: 100%;
+      height: 100%;
+    }
+    body::-webkit-scrollbar {
+        width: 7px;
+        /*background: red*/
+    }
+
+    body::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background-color: rgba(255,255,255,.1);
+      outline: 1px solid slategrey;
+      border-radius: 15px;
+      margin: 2px
+    }
+  </style>
+  <body>
+    <!-- <div style="height: 35px; background: #26252a; width: 100%"></div> -->
+    <webview src="https://trello.com/b/LzSKnZk5/projeto-minds-site" width="800" height="600" webpreferences="allowRunningInsecureContent"></webview>
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js'),
+  </script>
+</html>
