@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Monk - Trello</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0
+    }
+    body,html {
+      height: 100%
+    }
+
+    webview {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <body>
+    <webview src="https://trello.com/b/LzSKnZk5/projeto-minds-site" width="800" height="600" webpreferences="allowRunningInsecureContent, fullscreen"></webview>
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js'),
+    // require('devtron').install()
+  </script>
+</html>
