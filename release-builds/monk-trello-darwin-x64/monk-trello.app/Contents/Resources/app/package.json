@@ -10,7 +10,7 @@
     "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=img/ico/1024x1024.png --prune=true --out=release-builds",
     "create-installer-mac": "electron-installer-dmg ./release-builds/Electron\\ tutorial\\ app-darwin-x64/Electron\\ tutorial\\ app.app electron-tutorial-app --out=release-builds --overwrite --icon=img/ico/logo.png.icns"
   },
-  "repository": "",
+  "repository": "https://github.com/gustavoquinalha/trello-ios.git",
   "keywords": [
     "Electron",
     "quick",
@@ -18,7 +18,7 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
+  "author": "gustavoquinalha",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "~1.6.2",

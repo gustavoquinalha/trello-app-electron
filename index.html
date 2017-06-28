@@ -20,7 +20,7 @@
       height: 100%;
     }
     body::-webkit-scrollbar {
-        width: 10px;
+        width: 7px;
         /*background: red*/
     }
 
@@ -31,11 +31,13 @@
     body::-webkit-scrollbar-thumb {
       background-color: rgba(255,255,255,.1);
       outline: 1px solid slategrey;
+      border-radius: 15px;
+      margin: 2px
     }
   </style>
   <body>
-    <div style="height: 30px; background: #312450; width: 100%"></div>
-    <webview src="https://trello.com/b/LzSKnZk5/projeto-minds-site" width="800" height="600" webpreferences="allowRunningInsecureContent, fullscreen"></webview>
+    <!-- <div style="height: 35px; background: #26252a; width: 100%"></div> -->
+    <webview src="https://trello.com/b/LzSKnZk5/projeto-minds-site" width="800" height="600" webpreferences="allowRunningInsecureContent"></webview>
   </body>
 
   <script>

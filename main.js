@@ -14,13 +14,18 @@ let mainWindow
 function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-      titleBarStyle: 'hidden',
+      // titleBarStyle: 'hidden-inset',
+      javascript: true,
+      images: true,
       icon: path.join(__dirname, 'img/ico/64x64.png'),
       width: 1200,
       height: 600,
+      resizable: true,
+      frame: true,
+      darkTheme: true,
       minWidth: 1200,
       minHeight: 600,
-      backgroundColor: '#312450',
+      backgroundColor: '#26252a',
   });
 
 	mainWindow.on('minimize', function(event) {
